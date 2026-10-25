@@ -1,0 +1,15 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "gift-genius-ai",
+  "main": "src/index.js",
+  "compatibility_date": "2026-10-24",
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS",
+    "run_worker_first": ["/api/*"]
+  },
+  "vars": {
+    "GEMINI_MODEL": "gemini-2.5-flash",
+    "DAILY_REQUEST_LIMIT": "10"
+  }
+}
